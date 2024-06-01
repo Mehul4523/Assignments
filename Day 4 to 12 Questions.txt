@@ -1,0 +1,104 @@
+Day 4:
+Task 1: Array Sorting and Searching
+a) Implement a function called BruteForceSort that sorts an array using the brute force approach. Use this function to sort an array created with InitializeArray.
+ b) Write a function named PerformLinearSearch that searches for a specific element in an array and returns the index of the element if found or -1 if not found.
+
+Task 2: Two-Sum Problem
+a) Given an array of integers, write a program that finds if there are two numbers that add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. Optimize the solution for time complexity.
+
+Task 3: Understanding Functions through Arrays
+a) Write a recursive function named SumArray that calculates and returns the sum of elements in an array, demonstarte with example.
+
+Task 4: Advanced Array Operations
+a)  Implement a method SliceArray that takes an array, a starting index, and an end index, then returns a new array containing the elements from the start to the end index.
+b) Create a recursive function to find the nth element of a Fibonacci sequence and store the first n elements in an array.
+
+
+Day 5:
+Task 1: Implementing a Linked List
+1) Write a class CustomLinkedList that implements a singly linked list with methods for InsertAtBeginning, InsertAtEnd, InsertAtPosition, DeleteNode, UpdateNode, and DisplayAllNodes. Test the class by performing a series of insertions, updates, and deletions.
+
+Task 2: Stack and Queue Operations
+1) Create a CustomStack class with operations Push, Pop, Peek, and IsEmpty. Demonstrate its LIFO behavior by pushing integers onto the stack, then popping and displaying them until the stack is empty.
+2) Develop a CustomQueue class with methods for Enqueue, Dequeue, Peek, and IsEmpty. Show how your queue can handle different data types by enqueuing strings and integers, then dequeuing and displaying them to confirm FIFO order.
+
+Task 3: Priority Queue Scenario
+a) Implement a priority queue to manage emergency room admissions in a hospital. Patients with higher urgency should be served before those with lower urgency.
+
+
+Day 6: 
+Task 1: Real-time Data Stream Sorting
+A stock trading application requires real-time sorting of trade transactions by price. Implement a heap sort algorithm that can efficiently handle continuous incoming data, adding and sorting new trades as they come.
+
+Task 2: Linked List Middle Element Search
+You are given a singly linked list. Write a function to find the middle element without using any extra space and only one traversal through the linked list.
+
+Task 3: Queue Sorting with Limited Space
+You have a queue of integers that you need to sort. You can only use additional space equivalent to one stack. Describe the steps you would take to sort the elements in the queue.
+
+Task 4: Stack Sorting In-Place
+You must write a function to sort a stack such that the smallest items are on the top. You can use an additional temporary stack, but you may not copy the elements into any other data structure such as an array. The stack supports the following operations: push, pop, peek, and isEmpty.
+
+Task 5: Removing Duplicates from a Sorted Linked List
+A sorted linked list has been constructed with repeated elements. Describe an algorithm to remove all duplicates from the linked list efficiently.
+
+Task 6: Searching for a Sequence in a Stack
+Given a stack and a smaller array representing a sequence, write a function that determines if the sequence is present in the stack. Consider the sequence present if, upon popping the elements, all elements of the array appear consecutively in the stack.
+
+Task 7: Merging Two Sorted Linked Lists
+You are provided with the heads of two sorted linked lists. The lists are sorted in ascending order. Create a merged linked list in ascending order from the two input lists without using any extra space (i.e., do not create any new nodes).
+
+Task 8: Circular Queue Binary Search
+Consider a circular queue (implemented using a fixed-size array) where the elements are sorted but have been rotated at an unknown index. Describe an approach to perform a binary search for a given element within this circular queue.
+
+Day 7 and 8:
+Task 1: Balanced Binary Tree Check
+Write a function to check if a given binary tree is balanced. A balanced tree is one where the height of two subtrees of any node never differs by more than one.
+
+Task 2: Trie for Prefix Checking
+Implement a trie data structure in C# that supports insertion of strings and provides a method to check if a given string is a prefix of any word in the trie.
+
+Task 3: Implementing Heap Operations
+Code a min-heap in C# with methods for insertion, deletion, and fetching the minimum element. Ensure that the heap property is maintained after each operation.
+
+Task 4: Graph Edge Addition Validation
+Given a directed graph, write a function that adds an edge between two nodes and then checks if the graph still has no cycles. If a cycle is created, the edge should not be added.
+
+Task 5: Breadth-First Search (BFS) Implementation
+For a given undirected graph, implement BFS to traverse the graph starting from a given node and print each node in the order it is visited.
+
+Task 6: Depth-First Search (DFS) Recursive
+Write a recursive DFS function for a given undirected graph. The function should visit every node and print it out.
+
+Day 9 and 10:
+Task 1: Dijkstra’s Shortest Path Finder
+Code Dijkstra’s algorithm to find the shortest path from a start node to every other node in a weighted graph with positive weights.
+
+Task 2: Kruskal’s Algorithm for MST
+Implement Kruskal’s algorithm to find the minimum spanning tree of a given connected, undirected graph with non-negative edge weights.
+
+Task 3: Union-Find for Cycle Detection
+Write a Union-Find data structure with path compression. Use this data structure to detect a cycle in an undirected graph.
+
+Day 11:
+Task 1: String Operations
+Write a method that takes two strings, concatenates them, reverses the result, and then extracts the middle substring of the given length. Ensure your method handles edge cases, such as an empty string or a substring length larger than the concatenated string.
+
+Task 2: Naive Pattern Search
+Implement the naive pattern searching algorithm to find all occurrences of a pattern within a given text string. Count the number of comparisons made during the search to evaluate the efficiency of the algorithm.
+
+Task 3: Implementing the KMP Algorithm
+Code the Knuth-Morris-Pratt (KMP) algorithm in C# for pattern searching which pre-processes the pattern to reduce the number of comparisons. Explain how this pre-processing improves the search time compared to the naive approach.
+
+Task 4: Rabin-Karp Substring Search
+Implement the Rabin-Karp algorithm for substring search using a rolling hash. Discuss the impact of hash collisions on the algorithm's performance and how to handle them.
+
+Task 5: Boyer-Moore Algorithm Application
+Use the Boyer-Moore algorithm to write a function that finds the last occurrence of a substring in a given string and returns its index. Explain why this algorithm can outperform others in certain scenarios.
+
+Day 12:
+Task 1: Bit Manipulation Basics
+Create a function that counts the number of set bits (1s) in the binary representation of an integer. Extend this to count the total number of set bits in all integers from 1 to n.
+
+Task 2: Unique Elements Identification
+Given an array of integers where every element appears twice except for two, write a function that efficiently finds these two non-repeating elements using bitwise XOR operations.
