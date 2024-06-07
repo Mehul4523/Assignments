@@ -1,0 +1,129 @@
+Day 13 and 14:
+Task 1: Tower of Hanoi Solver
+Create a program that solves the Tower of Hanoi puzzle for n disks. The solution should use recursion to move disks between three pegs (source, auxiliary, and destination) according to the game's rules. The program should print out each move required to solve the puzzle.
+
+Task 2: Traveling Salesman Problem
+Create a function int FindMinCost(int[,] graph) that takes a 2D array representing the graph where graph[i][j] is the cost to travel from city i to city j. The function should return the minimum cost to visit all cities and return to the starting city. Use dynamic programming for this solution.
+
+Task 3: Job Sequencing Problem
+Define a class Job with properties int Id, int Deadline, and int Profit. Then implement a function List<Job> JobSequencing(List<Job> jobs) that takes a list of jobs and returns the maximum profit sequence of jobs that can be done before the deadlines. Use the greedy method to solve this problem.
+
+Day 15 and 16:
+Task 1: Knapsack Problem
+Write a function int Knapsack(int W, int[] weights, int[] values) in C# that determines the maximum value of items that can fit into a knapsack with a capacity W. The function should handle up to 100 items. Find the optimal way to fill the knapsack with the given items to achieve the maximum total value. You must consider that you cannot break items, but have to include them whole.
+
+Task 2: Longest Common Subsequence
+Implement int LCS(string text1, string text2)  to find the length of the longest common subsequence between two strings.
+
+Day 16 and 17:
+Task 1: The Knight’s Tour Problem
+Create a function bool SolveKnightsTour(int[,] board, int moveX, int moveY, int moveCount, int[] xMove, int[] yMove) that attempts to solve the Knight's Tour problem using backtracking. The function should return true if a solution exists and false otherwise. The board represents the chessboard, moveX and moveY are the current coordinates of the knight, moveCount is the current move count, and xMove[], yMove[] are the possible next moves for the knight. Fill the chessboard such that the knight visits every square exactly once. Keep the  chessboard size to 8x8.
+
+Task 2: Rat in a Maze
+mplement a function bool SolveMaze(int[,] maze) that uses backtracking to find a path from the top left corner to the bottom right corner of a maze. The maze is represented by a 2D array where 1s are paths and 0s are walls. Find a rat's path through the maze. The maze size is 6x6.
+
+Task 3: N Queen Problem
+Write a function bool SolveNQueen(int[,] board, int col) in C# that places N queens on an N x N chessboard so that no two queens attack each other using backtracking. Place N queens on the board such that no two queens can attack each other. Use a standard 8x8 chessboard.
+
+
+Day 18:
+Task 1: Creating and Managing Threads
+Write a program that starts two threads, where each thread prints numbers from 1 to 10 with a 1-second delay between each number
+
+Task 2: States and Transitions
+Create a Java class that simulates a thread going through different lifecycle states: NEW, RUNNABLE, WAITING, TIMED_WAITING, BLOCKED, and TERMINATED. Use methods like sleep(), wait(), notify(), and join() to demonstrate these states..
+
+Task 3: Synchronization and Inter-thread Communication
+Implement a producer-consumer problem using wait() and notify() methods to handle the correct processing sequence between threads.
+
+Task 4: Synchronized Blocks and Methods
+Write a program that simulates a bank account being accessed by multiple threads to perform deposits and withdrawals using synchronized methods to prevent race conditions.
+
+Task 5: Thread Pools and Concurrency Utilities
+Create a fixed-size thread pool and submit multiple tasks that perform complex calculations or I/O operations and observe the execution.
+
+Task 6: Executors, Concurrent Collections, CompletableFuture
+Use an ExecutorService to parallelize a task that calculates prime numbers up to a given number and then use CompletableFuture to write the results to a file asynchronously.
+
+Task 7: Writing Thread-Safe Code, Immutable Objects
+Design a thread-safe Counter class with increment and decrement methods. Then demonstrate its usage from multiple threads. Also, implement and use an immutable class to share data between threads.
+
+Day 19:
+Task 1: Generics and Type Safety
+Create a generic Pair class that holds two objects of different types, and write a method to return a reversed version of the pair.
+
+Task 2: Generic Classes and Methods
+Implement a generic method that swaps the positions of two elements in an array, regardless of their type, and demonstrate its usage with different object types.
+
+Task 3: Reflection API 
+Use reflection to inspect a class's methods, fields, and constructors, and modify the access level of a private field, setting its value during runtime
+
+Task 4: Lambda Expressions
+Implement a Comparator for a Person class using a lambda expression, and sort a list of Person objects by their age..
+
+Task 5: Functional Interfaces
+Create a method that accepts functions as parameters using Predicate, Function, Consumer, and Supplier interfaces to operate on a Person object.
+
+Day 20:
+Task 1: Java IO Basics
+Write a program that reads a text file and counts the frequency of each word using FileReader and FileWriter.
+
+Task 2: Serialization and Deserialization
+Serialize a custom object to a file and then deserialize it back to recover the object state.
+
+Task 3: New IO (NIO)
+Use NIO Channels and Buffers to read content from a file and write to another file.
+
+Task 4: Java Networking
+Write a simple HTTP client that connects to a URL, sends a request, and displays the response headers and body.
+
+Task 5: Java Networking and Serialization
+Develop a basic TCP client and server application where the client sends a serialized object with 2 numbers and operation  to be performed on them to the server, and the server computes the result and sends it back to the client. for eg, we could send  2, 2, "+" which would mean 2 + 2
+
+Task 6: Java 8 Date and Time API
+Write a program that calculates the number of days between two dates input by the user.
+
+Task 7: Timezone
+Create a timezone converter that takes a time in one timezone and converts it to another timezone.
+
+Day 21:
+Task 1: Establishing Database Connections
+Write a Java program that connects to a SQLite database and prints out the connection object to confirm successful connection.
+
+Task 2: SQL Queries using JDBC
+Create a table 'User' with a following schema 'User ID' and 'Password' stored as hash format (note you have research on how to generate hash from a string), accept "User ID" and "Password" as input and check in the table if they match to confirm whether user access is allowed or not.
+
+Task 3: PreparedStatement
+Modify the SELECT query program to use PreparedStatement to parameterize the query and prevent SQL injection.
+
+Day 22:
+Task 1: Write a set of JUnit tests for a given class with simple mathematical operations (add, subtract, multiply, divide) using the basic @Test annotation.
+
+Task 2: Extend the above JUnit tests to use @Before, @After, @BeforeClass, and @AfterClass annotations to manage test setup and teardown.
+
+Task 3: Create test cases with assertEquals, assertTrue, and assertFalse to validate the correctness of a custom String utility class.
+
+Task 4: Research and present a comparison of different garbage collection algorithms (Serial, Parallel, CMS, G1, ZGC) in Java.
+
+Day 23:
+Task 1: Singleton
+Implement a Singleton class that manages database connections. Ensure the class adheres strictly to the singleton pattern principles.
+
+Task 2: Factory Method
+Create a ShapeFactory class that encapsulates the object creation logic of different Shape objects like Circle, Square, and Rectangle.
+
+
+Task 3: Proxy
+Create a proxy class for accessing a sensitive object that contains a secret key. The proxy should only allow access to the secret key if a correct password is provided.
+
+Task 4: Strategy
+Develop a Context class that can use different SortingStrategy algorithms interchangeably to sort a collection of numbers
+
+Day 24:.
+Task 1: Build Lifecycle
+Demonstrate the use of Maven lifecycle phases (clean, compile, test, package, install, deploy) by executing them on a sample project and documenting what happens in each phase.
+
+
+
+
+
