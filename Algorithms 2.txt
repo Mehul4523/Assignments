@@ -1,0 +1,58 @@
+How this Pre-Processing Improves the search Time Compared to the Naive Approach?
+1) Prefix Function Computation:
+• KMP pre-processes the pattern to create an array (lps) that stores the lengths of the longest 
+proper prefix which is also a suffix for each sub-pattern.
+• This helps in understanding how much to shift the pattern upon a mismatch.
+2) Avoids Re-evaluation:
+• The ‘lps’ array allows the algorithm to skip re-evaluating characters that are known to 
+match.
+• Instead of moving one character at a time (like in the naive approach), KMP uses the ‘lps’
+array to determine the next positions to check, thus reducing redundant comparisons.
+3) Linear Time Complexity:
+• The preprocessing of the pattern takes O(m) time, where m is the length of the pattern.
+• The search phase also takes O(n) time, where n is the length of the text.
+• Overall, KMP runs in O(n + m) time, making it more efficient than the naive approach, 
+which can have a worst-case time complexity of O(n*m).
+4) Efficiency in Overlapping Patterns:
+• When parts of the pattern overlap, the ‘lps’ array allows the algorithm to leverage the 
+overlap, avoiding unnecessary comparisons.
+• This is particularly beneficial for patterns with repetitive or self-similar structures.
+
+
+
+
+
+Hash Collisions in Rabin-Karp:
+• Impact: Collisions can lead to unnecessary character comparisons, reducing efficiency. In the 
+worst case, if every substring hashes to the same value, the algorithm behaves like a naive 
+search with time complexity O(n*m).
+• Handling:
+1. Use a good hash function with a low collision probability.
+2. After a hash match, perform a character-by-character comparison to confirm the actual 
+match (as done in the code). This adds a small overhead but ensures accuracy.
+
+
+
+
+Why Boyer-Moore Algorithm can Outperform others in Certain Scenarios?
+• Bad Character Heuristic: The algorithm uses the bad character heuristic to skip sections 
+of the text that do not match the pattern, making the search faster by potentially skipping 
+more characters compared to other algorithms.
+• Good Suffix Heuristic: It leverages the good suffix heuristic to further optimize the search 
+by shifting the pattern more intelligently when a mismatch occurs after matching some 
+suffix of the pattern.
+• Sub-linear Time Complexity: Boyer-Moore often operates in sub-linear time on average 
+because it doesn't examine each character of the text and pattern for every shift, unlike the 
+naive approach.
+• Efficient for Large Alphabets: The algorithm is particularly efficient when the alphabet 
+size is large since the bad character heuristic becomes more effective with a greater variety 
+of characters.
+• Pre-processing: Although it requires preprocessing of the pattern, this overhead is 
+generally small compared to the speedup gained during the search, especially for long texts.
+
+
+
+
+
+
+
